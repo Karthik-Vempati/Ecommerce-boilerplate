@@ -27,10 +27,11 @@ function Login() {
 
   return (
       <div>
-        <Header />
-        <h1>Login</h1>
+        
+        
         {!isLoggedIn ? (
             <>
+            <h1>Login</h1>
                 <form action="">
                     <input type="email" onChange={(e) => setEmail(e.target.value)} value={email} placeholder="Email Address"/>
                 <input type="password" onChange={(e) => setPassword(e.target.value)} value={password} placeholder="Password" />
@@ -40,11 +41,10 @@ function Login() {
             </>
         ): (
             <>
-
-    <h1>User Logged In</h1>
-    <button onClickCapture={logout}>logout user</button>
+            <Header />
+                <h1>User Logged In</h1>
+                <button onClickCapture={logout}>logout user</button>
             </>
-
   )}
     </div>
   ) 
