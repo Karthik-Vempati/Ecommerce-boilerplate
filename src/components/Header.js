@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import {
+    MDBIcon,
   MDBContainer,
   MDBNavbar,
   MDBNavbarBrand,
